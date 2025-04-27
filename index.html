@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragnar</title>
+
+    <!-- ربط ملف الـ CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top p-2">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <h1 class="--main-color m-0" data-aos="fade-down">Ragnar</h1>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <div class="d-flex ms-auto align-items-center gap-lg-5 gap-3 justify-content-center navItems">
+        <p class="mb-0"><a href="#home" class="nav-link" data-aos="fade-down" data-aos-delay="100" data-key="home">Home</a></p>
+        <p class="mb-0"><a href="#about" class="nav-link" data-aos="fade-down" data-aos-delay="200" data-key="about">About Me</a></p>
+        <p class="mb-0"><a href="#blog" class="nav-link" data-aos="fade-down" data-aos-delay="300" data-key="blog">Blog</a></p>
+        <p class="mb-0"><a href="#contact" class="nav-link" data-aos="fade-down" data-aos-delay="400" data-key="contact">Contact</a></p>
+      </div>
+
+      <div class="language-switcher ms-3">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+
+    </div>
+  </div>
+  
+</nav>
+
+
+<!-- /Navbar -->
+
+<!-- Home -->
+<div id="home" class="home">
+  <div class="container d-grid h-100 align-content-center gap-4 text-start">
+    <h1 class="--main-color" data-aos="fade-up" data-key="title">Life of Nature</h1>
+    <h4 class="w-lg-50 w-100" style="font-style: italic;" data-aos="fade-right" data-aos-delay="200" data-key="description">
+      "Capture the magic of every season; breathe the sea breeze, touch the golden sands, taste the sun-kissed fruits, and surrender to the endless beauty of Sharm El-Sheikh."
+    </h4>
+    <h3 class="--main-color" data-aos="fade-left" data-aos-delay="400">―Mohanad Alyaser</h3>
+    <span class="m-0 p-0 fs-5" data-aos="fade-left" data-aos-delay="400">''The best photographer in Sharm El-Sheikh''</span>
+  </div>
+</div>
+<!-- /Home -->
+
+<!-- Achievements -->
+<section id="about" class="achievements my-5 p-2 text-center">
+  <h1 class="--main-color section" data-aos="zoom-in" data-key="achievements">Achievements</h1>
+  <div class="d-flex flex-wrap justify-content-center align-items-center gap-lg-5 gap-5 my-5">
+
+    <div class="d-grid" data-aos="flip-left" data-aos-delay="100">
+      <h2 data-key="years_exp">Years Of Experience</h2>
+      <h2 class="--main-color">2</h2>
+    </div>
+
+    <div class="d-grid" data-aos="flip-left" data-aos-delay="200">
+      <h2 data-key="projects">Projects</h2>
+      <h2 class="--main-color">+100</h2>
+    </div>
+
+    <div class="d-grid" data-aos="flip-left" data-aos-delay="300">
+      <h2 data-key="clients">Clients</h2>
+      <h2 class="--main-color">+50</h2>
+    </div>
+
+    <div class="d-grid" data-aos="flip-left" data-aos-delay="400">
+      <h2 data-key="publications">Publications</h2>
+      <h2 class="--main-color">5</h2>
+    </div>
+
+  </div>
+</section>
+<!-- /Achievements -->
+
+<!-- Sharm El-Sheikh Vibes -->
+<section class="vibes text-center">
+  <h1 class="section --main-color mb-5" data-aos="zoom-in" data-key="vibes_title">Sharm El-Sheikh Vibes</h1>
+  <div class="container mb-5">
+    <div class="row g-4" >
+
+      <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="vibe-item position-relative">
+          <img src="./imgs/vibes1.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 1" loading="lazy">
+          <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
+            <i class="bi bi-chevron-double-down fs-3 "></i>
+            <p class="m-0" data-key="vibe1">Ocean Breeze</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="vibe-item position-relative downImg" >
+          <img src="./imgs/vibes2.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 2" loading="lazy">
+          <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
+            <i class="bi bi-chevron-double-down fs-3"></i>
+            <p class="m-0" data-key="vibe2">Golden Sands</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="vibe-item position-relative">
+          <img src="./imgs/vibes3.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 3" loading="lazy">
+          <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
+            <i class="bi bi-chevron-double-down fs-3"></i>
+            <p class="m-0" data-key="vibe3">Sunset Magic</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="vibe-item position-relative downImg">
+          <img src="./imgs/vibes4.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 4" loading="lazy">
+          <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
+            <i class="bi bi-chevron-double-down fs-3"></i>
+            <p class="m-0" data-key="vibe4">Tropical Dreams</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /Sharm El-Sheikh Vibes -->
+
+<!-- Blog -->
+<section class="blog text-center" id="blog">
+  <h1 class="section --main-color" data-aos="zoom-in" data-key="blog_title">Blog</h1>
+  <div class="container my-5">
+    <div class="row g-5 mt-5" id="blogImages">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="100">
+        <img src="./imgs/blog1.png" class="w-100 h-75 blog-img  rounded-2" alt="Image 1" loading="lazy">
+        <h2 class="mt-3" data-key="blog1_title">Brothers</h2>
+        <p data-key="blog1_desc">Paragraph content for Image 1</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="200">
+        <img src="./imgs/blog2.png" class="w-100 h-75 blog-img rounded-2 " alt="Image 2" loading="lazy">
+        <h2 class="mt-3" data-key="blog2_title">Image 2</h2>
+        <p data-key="blog2_desc">Paragraph content for Image 2</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="300">
+        <img src="./imgs/blog4.png" class="w-100 h-75 blog-img rounded-2" alt="Image 3" loading="lazy">
+        <h2 class="mt-3" data-key="blog3_title">Image 3</h2>
+        <p data-key="blog3_desc">Paragraph content for Image 3</p>
+      </div>
+    </div>
+    <h2 class="--main-color cursor-pointer" id="seeAllButton" data-key="see_all">See All →</h2>
+  </div>
+
+  <div class="hideenImgs d-none">
+    <div class="container mb-5">
+      <div class="row g-5" id="blogImages">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="100">
+          <img src="./imgs/blog (4).png" class="w-100 h-75 blog-img  rounded-2" alt="Image 1" loading="lazy">
+          <h2 class="mt-3" data-key="blog4_title">Girlfrind</h2>
+          <p data-key="blog4_desc">She is my endless love.</p>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="200">
+          <img src="./imgs/blog (2).png" class="w-100 h-75 blog-img rounded-2 " alt="Image 2" loading="lazy">
+          <h2 class="mt-3" data-key="blog5_title">Family</h2>
+          <p data-key="blog5_desc">Family is my greatest support. </p>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="300">
+          <img src="./imgs/blog (3).png" class="w-100 h-75 blog-img rounded-2" alt="Image 3" loading="lazy">
+          <h2 class="mt-3" data-key="blog6_title">Angel</h2>
+          <p data-key="blog6_desc">precious angel</p>
+        </div>
+      </div>
+      <div class="row g-5" id="blogImages">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="100">
+          <img src="./imgs/blog (5).png" class="w-100 h-75 blog-img  rounded-2" alt="Image 1" loading="lazy">
+          <h2 class="mt-3" data-key="blog7_title">Beautiful girl</h2>
+          <p data-key="blog7_desc">A beautiful girl wearing a stunning white dress.</p>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="200">
+          <img src="./imgs/blog (6).png" class="w-100 h-75 blog-img rounded-2 " alt="Image 2" loading="lazy">
+          <h2 class="mt-3" data-key="blog8_title">Beautiful girl</h2>
+          <p data-key="blog8_desc">A beautiful girl wearing a stunning blue dress.</p>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="300">
+          <img src="./imgs/vibes3.png" class="w-100 h-75 blog-img rounded-2" alt="Image 3" loading="lazy">
+          <h2 class="mt-3" data-key="blog9_title">Beautiful mom</h2>
+          <p data-key="blog9_desc">A beautiful girl wearing a stunning blue dress.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /Blog -->
+
+<div class="endImg"></div>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="Testimonials py-5">
+  <div class="container">
+    <div class="row align-items-end">
+
+      <!-- Left Side -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+        <h1 class="--main-color" style="font-size: 100px;">,,</h1>
+        <h1 class="" data-key="testimonial_title">What they say <br> about me</h1>
+        <p class="lead" data-key="testimonial_desc">More than 3000 users have been helped by <br> World Online Course.</p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-light p-4 rounded-3 shadow-sm h-100 position-relative">
+          <h5 data-key="testimonial_quote_title">What they say <span><span>.</span>....</span></h5>
+          <p class="my-4" data-key="testimonial_quote">"Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the assignments given are also relevant to the current scope of work."</p>
+          
+          <div class="user-info d-flex justify-content-between align-items-center">
+            <img src="./images/EDITED-27-Copy-1.png" alt="userTestimonialsImg" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;" loading="lazy">
+            <div class="info">
+              <h4>Resky Fernanda</h4>
+              <p class="text-muted">Client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Testimonials Section -->
+
+<footer class="footer text-center py-5">
+  <div class="container">
+    <div id="contact" class="row g-4 m-auto text-center">
+
+      <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="d-flex flex-wrap align-items-center justify-content-center gap-lg-5 gap-3">
+          <p class="mb-0" data-key="footer_link1">Awards & Rewards</p>
+          <p class="mb-0" data-key="footer_link2">Learnings</p>
+          <p class="mb-0" data-key="footer_link3">Talk to me</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+          <h5 class="m-0 p-0" data-key="contact_me">Contact Me</h5>
+
+             <a href="https://www.facebook.com/profile.php?id=100003322991897" target="_blank">
+            <i class="fa-brands fa-facebook fs-3 --main-color cursor-pointer"></i>
+          </a> 
+          
+          <a href="https://www.instagram.com/ragnar_leo_1/" target="_blank">
+            <i class="fa-brands fa-instagram fs-3 --main-color cursor-pointer"></i>
+          </a> 
+
+          <a href="https://wa.me/201551122933" target="_blank">
+            <i class="fa-brands fa-whatsapp fs-3 --main-color cursor-pointer"></i>
+          </a>
+          
+          <h4 class="mx-lg-5 mx-3 my-2">
+            <span data-key="call_me">Call me</span> <a href="tel:+201551122933" class="--main-color">+201551122933</a>
+          </h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="my-5">&copy; <span id="year"></span> <a href="#"> Elsayed Elsadek</a>. All rights reserved.</p>
+</footer>
+
+<!-- Fullscreen Image -->
+<div id="fullScreenImage">
+    <button id="closeButton">X</button>
+    <img class="rounded-2" id="fullScreenImg" src="" alt="Full Screen Image">
+</div>
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
