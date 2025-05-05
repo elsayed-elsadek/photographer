@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragnar</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- ربط ملف الـ CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <title>Professional Photographer - Events & Sessions Photography | Ragnar</title>
+    <meta name="description" content="Professional photography services in Sharm El-Sheikh, events photography, personal and family photo sessions">
+    <meta name="keywords" content="photography, photographer, events photography, Sharm El-Sheikh, photo sessions">
+    <meta name="author" content="Ragnar Photography">
+    <meta name="robots" content="index, follow">
 
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="ar" href="https://ragnar-photography.com/" />
+    <link rel="alternate" hreflang="en" href="https://ragnar-photography.com/en/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ragnar-photography.com/en/">
+    <meta property="og:title" content="Professional Photographer - Events & Sessions Photography">
+    <meta property="og:description" content="Professional photography for all occasions in Sharm El-Sheikh">
+    <meta property="og:image" content="https://ragnar-photography.com/imgs/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_EG">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ragnar-photography.com/en/">
+    <meta property="twitter:title" content="Professional Photographer - Events & Sessions Photography">
+    <meta property="twitter:description" content="Professional photography for all occasions in Sharm El-Sheikh">
+    <meta property="twitter:image" content="https://ragnar-photography.com/imgs/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../imgs/apple-touch-icon.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ragnar-photography.com/en/">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ragnar Photography",
+      "image": "https://ragnar-photography.com/imgs/og-image.jpg",
+      "description": "Professional photography services in Sharm El-Sheikh",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sharm El-Sheikh",
+        "addressRegion": "South Sinai",
+        "addressCountry": "Egypt"
+      },
+      "telephone": "+201551122933",
+      "areaServed": ["Egypt", "UK", "Germany", "USA"]
+    }
+    </script>
 </head>
+
+
 
 <body>
 
@@ -31,7 +84,7 @@
       <h1 class="--main-color m-0" data-aos="fade-down">Ragnar</h1>
     </div>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -39,8 +92,8 @@
       <div class="d-flex ms-auto align-items-center gap-lg-5 gap-3 justify-content-center navItems">
         <p class="mb-0"><a href="#home" class="nav-link" data-aos="fade-down" data-aos-delay="100" data-key="home">Home</a></p>
         <p class="mb-0"><a href="#about" class="nav-link" data-aos="fade-down" data-aos-delay="200" data-key="about">About Me</a></p>
+        <p class="mb-0"><a href="#services" class="nav-link" data-aos="fade-down" data-aos-delay="250" data-key="services">Services</a></p>
         <p class="mb-0"><a href="#blog" class="nav-link" data-aos="fade-down" data-aos-delay="300" data-key="blog">Blog</a></p>
-        <p class="mb-0"><a href="#contact" class="nav-link" data-aos="fade-down" data-aos-delay="400" data-key="contact">Contact</a></p>
       </div>
 
       <div class="language-switcher ms-3">
@@ -50,14 +103,13 @@
 
     </div>
   </div>
-  
 </nav>
 
 
 <!-- /Navbar -->
 
 <!-- Home -->
-<div id="home" class="home">
+<header id="home" class="home">
   <div class="container d-grid h-100 align-content-center gap-4 text-start">
     <h1 class="--main-color" data-aos="fade-up" data-key="title">Life of Nature</h1>
     <h4 class="w-lg-50 w-100" style="font-style: italic;" data-aos="fade-right" data-aos-delay="200" data-key="description">
@@ -65,12 +117,38 @@
     </h4>
     <h3 class="--main-color" data-aos="fade-left" data-aos-delay="400">―Mohanad Alyaser</h3>
     <span class="m-0 p-0 fs-5" data-aos="fade-left" data-aos-delay="400">''The best photographer in Sharm El-Sheikh''</span>
+    <a href="#contact" class="btn text-white mt-3" style="background-color: var(--main-color); width:200px" data-key="book_session" data-aos="fade-right" data-aos-delay="200">Book a Session</a>
   </div>
-</div>
+</header>
 <!-- /Home -->
 
+<!-- About Me -->
+<section id="about" class="about py-5">
+  <div class="container">
+    <div class="row align-items-center ">
+
+      <div class="col-lg-6 m-auto text-center" data-aos="fade-right" data-aos-once="false">
+      <img src="./imgs/mohand.png" alt="Ragnar - Professional Photographer" 
+     class="img-fluid rounded shadow w-75 h-100 rounded-circle mb-3 m-auto animated-img" 
+     loading="lazy">
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left">
+        <h1 class="--main-color section" data-key="about_title">About Me</h1>
+        <p data-key="about_desc">With over 2 years of professional photography experience in Sharm El-Sheikh, I specialize in capturing the essence of nature, people, and special moments. My passion is to create timeless memories that you'll cherish forever.</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-check-circle-fill --main-color me-2"></i> <span data-key="about_feature1">Professional equipment</span></li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill --main-color me-2"></i> <span data-key="about_feature2">Creative approach</span></li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill --main-color me-2"></i> <span data-key="about_feature3">Attention to detail</span></li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill --main-color me-2"></i> <span data-key="about_feature4">Natural lighting expertise</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Achievements -->
-<section id="about" class="achievements my-5 p-2 text-center">
+<section class="achievements my-5 p-2 text-center">
   <h1 class="--main-color section" data-aos="zoom-in" data-key="achievements">Achievements</h1>
   <div class="d-flex flex-wrap justify-content-center align-items-center gap-lg-5 gap-5 my-5">
 
@@ -96,7 +174,42 @@
 
   </div>
 </section>
-<!-- /Achievements -->
+
+<!-- Services -->
+<section id="services" class="services py-5 bg-light">
+  <div class="container">
+    <h1 class="--main-color section text-center" data-aos="zoom-in" data-key="services_title">My Services</h1>
+    <div class="row g-4 mt-5">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-camera --main-color fs-1 mb-3"></i>
+            <h3 data-key="service1_title">Portrait Photography</h3>
+            <p data-key="service1_desc">Professional portrait sessions to capture your personality and beauty.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-people --main-color fs-1 mb-3"></i>
+            <h3 data-key="service2_title">Family Photography</h3>
+            <p data-key="service2_desc">Capture precious moments with your loved ones in beautiful locations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-heart --main-color fs-1 mb-3"></i>
+            <h3 data-key="service3_title">Couple Photography</h3>
+            <p data-key="service3_desc">Romantic sessions to capture your love story in stunning settings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Sharm El-Sheikh Vibes -->
 <section class="vibes text-center">
@@ -106,7 +219,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="100">
         <div class="vibe-item position-relative">
-          <img src="./imgs/vibes1.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 1" loading="lazy">
+          <img src="./imgs/vibes1.png" class="w-100 h-100 rounded-3 blog-img" alt="Ocean Breeze in Sharm El-Sheikh" loading="lazy">
           <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
             <i class="bi bi-chevron-double-down fs-3 "></i>
             <p class="m-0" data-key="vibe1">Ocean Breeze</p>
@@ -116,7 +229,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="200">
         <div class="vibe-item position-relative downImg" >
-          <img src="./imgs/vibes2.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 2" loading="lazy">
+          <img src="./imgs/vibes2.png" class="w-100 h-100 rounded-3 blog-img" alt="Golden Sands in Sharm El-Sheikh" loading="lazy">
           <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
             <i class="bi bi-chevron-double-down fs-3"></i>
             <p class="m-0" data-key="vibe2">Golden Sands</p>
@@ -126,7 +239,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="300">
         <div class="vibe-item position-relative">
-          <img src="./imgs/vibes3.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 3" loading="lazy">
+          <img src="./imgs/vibes3.png" class="w-100 h-100 rounded-3 blog-img" alt="Sunset Magic in Sharm El-Sheikh" loading="lazy">
           <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
             <i class="bi bi-chevron-double-down fs-3"></i>
             <p class="m-0" data-key="vibe3">Sunset Magic</p>
@@ -136,7 +249,7 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="400">
         <div class="vibe-item position-relative downImg">
-          <img src="./imgs/vibes4.png" class="w-100 h-100 rounded-3 blog-img" alt="Vibe 4" loading="lazy">
+          <img src="./imgs/vibes4.png" class="w-100 h-100 rounded-3 blog-img" alt="Tropical Dreams in Sharm El-Sheikh" loading="lazy">
           <div class="vibe-text position-absolute bottom-0 start-50 translate-middle-x mb-3 text-white text-center">
             <i class="bi bi-chevron-double-down fs-3"></i>
             <p class="m-0" data-key="vibe4">Tropical Dreams</p>
@@ -147,81 +260,86 @@
     </div>
   </div>
 </section>
-<!-- /Sharm El-Sheikh Vibes -->
 
 <!-- Blog -->
+
 <section class="blog text-center" id="blog">
   <h1 class="section --main-color" data-aos="zoom-in" data-key="blog_title">Blog</h1>
   <div class="container my-5">
-    <div class="row g-5 mt-5" id="blogImages">
-      <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="100">
-        <img src="./imgs/blog1.png" class="w-100 h-75 blog-img  rounded-2" alt="Image 1" loading="lazy">
-        <h2 class="mt-3" data-key="blog1_title">Brothers</h2>
-        <p data-key="blog1_desc">Paragraph content for Image 1</p>
-      </div>
+    <!-- Horizontal Scroll Container -->
+    <div class="blog-scroll-container">
+      <div class="blog-scroll-wrapper" id="blogImages">
+        <!-- Item 1 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="./imgs/blog1.png" class="blog-img w-100 h-75" alt="Brothers posing for a photo" loading="lazy">
+          <h4 class="mt-3" data-key="blog1_title">Brothers</h4>
+          <p data-key="blog1_desc">A memorable photoshoot capturing the bond between brothers.</p>
+        </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="200">
-        <img src="./imgs/blog2.png" class="w-100 h-75 blog-img rounded-2 " alt="Image 2" loading="lazy">
-        <h2 class="mt-3" data-key="blog2_title">Image 2</h2>
-        <p data-key="blog2_desc">Paragraph content for Image 2</p>
-      </div>
+        <!-- Item 2 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="./imgs/blog2.png" class="blog-img w-100 h-75" alt="Traditional Egyptian dress photoshoot" loading="lazy">
+          <h4 class="mt-3" data-key="blog2_title">Egyptian Traditional</h4>
+          <p data-key="blog2_desc">Showcasing the beauty of Egyptian cultural heritage.</p>
+        </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="300">
-        <img src="./imgs/blog4.png" class="w-100 h-75 blog-img rounded-2" alt="Image 3" loading="lazy">
-        <h2 class="mt-3" data-key="blog3_title">Image 3</h2>
-        <p data-key="blog3_desc">Paragraph content for Image 3</p>
-      </div>
-    </div>
-    <h2 class="--main-color cursor-pointer" id="seeAllButton" data-key="see_all">See All →</h2>
-  </div>
+        <!-- Item 3 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="./imgs/blog4.png" class="blog-img w-100 h-75" alt="Portrait with flowers" loading="lazy">
+          <h4 class="mt-3" data-key="blog3_title">With Flowers</h4>
+          <p data-key="blog3_desc">The rose whispers secrets of love with every soft, fragrant petal.</p>
+        </div>
 
-  <div class="hideenImgs d-none">
-    <div class="container mb-5">
-      <div class="row g-5" id="blogImages">
-        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="100">
-          <img src="./imgs/blog (4).png" class="w-100 h-75 blog-img  rounded-2" alt="Image 1" loading="lazy">
-          <h2 class="mt-3" data-key="blog4_title">Girlfrind</h2>
+        <!-- Item 4 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="./imgs/blog (4).png" class="blog-img w-100 h-75" alt="Girlfriend portrait" loading="lazy">
+          <h4 class="mt-3" data-key="blog4_title">Girlfriend</h4>
           <p data-key="blog4_desc">She is my endless love.</p>
         </div>
-  
-        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="200">
-          <img src="./imgs/blog (2).png" class="w-100 h-75 blog-img rounded-2 " alt="Image 2" loading="lazy">
-          <h2 class="mt-3" data-key="blog5_title">Family</h2>
-          <p data-key="blog5_desc">Family is my greatest support. </p>
+
+        <!-- Item 5 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="./imgs/blog (2).png" class="blog-img w-100 h-75" alt="Family photoshoot" loading="lazy">
+          <h4 class="mt-3" data-key="blog5_title">Family</h4>
+          <p data-key="blog5_desc">Family is my greatest support.</p>
         </div>
-  
-        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="300">
-          <img src="./imgs/blog (3).png" class="w-100 h-75 blog-img rounded-2" alt="Image 3" loading="lazy">
-          <h2 class="mt-3" data-key="blog6_title">Angel</h2>
-          <p data-key="blog6_desc">precious angel</p>
+
+        <!-- Item 6 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="./imgs/blog (3).png" class="blog-img w-100 h-75" alt="Angel portrait" loading="lazy">
+          <h4 class="mt-3" data-key="blog6_title">Angel</h4>
+          <p data-key="blog6_desc">Precious angel captured in a moment of serenity.</p>
         </div>
-      </div>
-      <div class="row g-5" id="blogImages">
-        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="100">
-          <img src="./imgs/blog (5).png" class="w-100 h-75 blog-img  rounded-2" alt="Image 1" loading="lazy">
-          <h2 class="mt-3" data-key="blog7_title">Beautiful girl</h2>
+
+        <!-- Item 7 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="./imgs/blog (5).png" class="blog-img w-100 h-75" alt="Beautiful girl in white dress" loading="lazy">
+          <h4 class="mt-3" data-key="blog7_title">Beautiful Girl</h4>
           <p data-key="blog7_desc">A beautiful girl wearing a stunning white dress.</p>
         </div>
-  
-        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="200">
-          <img src="./imgs/blog (6).png" class="w-100 h-75 blog-img rounded-2 " alt="Image 2" loading="lazy">
-          <h2 class="mt-3" data-key="blog8_title">Beautiful girl</h2>
+
+        <!-- Item 8 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="./imgs/blog (6).png" class="blog-img w-100 h-75" alt="Beautiful girl in blue dress" loading="lazy">
+          <h4 class="mt-3" data-key="blog8_title">Elegant Beauty</h4>
           <p data-key="blog8_desc">A beautiful girl wearing a stunning blue dress.</p>
         </div>
-  
-        <div class="col-lg-4 col-md-6 col-sm-12 text-start" data-aos="fade-up" data-aos-delay="300">
-          <img src="./imgs/vibes3.png" class="w-100 h-75 blog-img rounded-2" alt="Image 3" loading="lazy">
-          <h2 class="mt-3" data-key="blog9_title">Beautiful mom</h2>
-          <p data-key="blog9_desc">A beautiful girl wearing a stunning blue dress.</p>
+
+        <!-- Item 9 -->
+        <div class="blog-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="./imgs/vibes3.png" class="blog-img w-100 h-75" alt="Beautiful mother portrait" loading="lazy">
+          <h4 class="mt-3" data-key="blog9_title">Beautiful Mom</h4>
+          <p data-key="blog9_desc">A loving mother captured in a beautiful moment.</p>
         </div>
       </div>
-
     </div>
+    
+    <!-- Remove "See All" button since all items are now visible -->
   </div>
 </section>
-<!-- /Blog -->
-
-<div class="endImg"></div>
+    <!-- <h2 class="--main-color cursor-pointer mt-4" id="seeAllButton" data-key="see_all">See All →</h2> -->
+  </div>
+</section>
 
 <!-- Testimonials Section -->
 <section id="testimonials" class="Testimonials py-5">
@@ -232,19 +350,19 @@
       <div class="col-lg-6 col-md-12 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
         <h1 class="--main-color" style="font-size: 100px;">,,</h1>
         <h1 class="" data-key="testimonial_title">What they say <br> about me</h1>
-        <p class="lead" data-key="testimonial_desc">More than 3000 users have been helped by <br> World Online Course.</p>
+        <p class="lead" data-key="testimonial_desc">Over 500 clients have been captured <br/> through the lens of a world-class photographer.</p>
       </div>
 
       <!-- Right Side -->
       <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
         <div class="bg-light p-4 rounded-3 shadow-sm h-100 position-relative">
-          <h5 data-key="testimonial_quote_title">What they say <span><span>.</span>....</span></h5>
-          <p class="my-4" data-key="testimonial_quote">"Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the assignments given are also relevant to the current scope of work."</p>
+          <h5 data-key="testimonial_quote_title" class="--main-color">Client Feedback</h5>
+          <p class="my-4" data-key="testimonial_quote">"Although I was getting ready to return to colder weather, a beautiful surprise awaited me — @ragnar_leo_1 made sure I left with an unforgettable memory of Egypt’s warm sun. I came back with vibrant, colorful shots that capture truly special moments in a place that is absolutely worth visiting."</p>
           
-          <div class="user-info d-flex justify-content-between align-items-center">
-            <img src="./images/EDITED-27-Copy-1.png" alt="userTestimonialsImg" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;" loading="lazy">
+          <div class="user-info d-flex justify-content-center gap-5 ">
+            <img src="./imgs/client.png" alt="Resky Fernanda - Client" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;" loading="lazy">
             <div class="info">
-              <h4>Resky Fernanda</h4>
+              <h4>ir_ros</h4>
               <p class="text-muted">Client</p>
             </div>
           </div>
@@ -254,11 +372,11 @@
     </div>
   </div>
 </section>
-<!-- End Testimonials Section -->
 
+<!-- Footer -->
 <footer class="footer text-center py-5">
   <div class="container">
-    <div id="contact" class="row g-4 m-auto text-center">
+    <div class="row g-4 m-auto text-center align-items-center">
 
       <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
         <div class="d-flex flex-wrap align-items-center justify-content-center gap-lg-5 gap-3">
@@ -268,19 +386,20 @@
         </div>
       </div>
 
-      <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
+      <!-- contact -->
+      <div id="contact" class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
         <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
           <h5 class="m-0 p-0" data-key="contact_me">Contact Me</h5>
 
-             <a href="https://www.facebook.com/profile.php?id=100003322991897" target="_blank">
+             <a href="https://www.facebook.com/profile.php?id=100003322991897" target="_blank" aria-label="Facebook">
             <i class="fa-brands fa-facebook fs-3 --main-color cursor-pointer"></i>
           </a> 
           
-          <a href="https://www.instagram.com/ragnar_leo_1/" target="_blank">
+          <a href="https://www.instagram.com/ragnar_leo_1/" target="_blank" aria-label="Instagram">
             <i class="fa-brands fa-instagram fs-3 --main-color cursor-pointer"></i>
           </a> 
 
-          <a href="https://wa.me/201551122933" target="_blank">
+          <a href="https://wa.me/201551122933" target="_blank" aria-label="WhatsApp">
             <i class="fa-brands fa-whatsapp fs-3 --main-color cursor-pointer"></i>
           </a>
           
@@ -293,18 +412,22 @@
     </div>
   </div>
 
-  <p class="my-5">&copy; <span id="year"></span> <a href="#"> Elsayed Elsadek</a>. All rights reserved.</p>
+  <p class="my-5">&copy; <span id="year"></span> <a href="https://www.instagram.com/elsayed.elsadek_/" target="_blank"> Elsayed Elsadek</a>. All rights reserved.</p>
 </footer>
 
 <!-- Fullscreen Image -->
-<div id="fullScreenImage">
-    <button id="closeButton">X</button>
+<div id="fullScreenImage" aria-hidden="true">
+    <button id="closeButton" aria-label="Close image">X</button>
     <img class="rounded-2" id="fullScreenImg" src="" alt="Full Screen Image">
 </div>
 
 <!-- JavaScript -->
+<script type="module" src="./script.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="./script.js"></script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

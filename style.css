@@ -1,24 +1,58 @@
+
 /* Global Styles */
+
 :root {
     --main-color: #086A47;
     --secondary-color: #f8f9fa;
     --text-color: #333;
     --light-text: #6c757d;
     --transition: all 0.3s ease;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
+/* Print Styles */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .navbar, .footer, .lang-btn {
+        display: none !important;
+    }
 }
-/* Global Styles */
-:root {
-    --main-color: #086A47;
-    --secondary-color: #f8f9fa;
-    --text-color: #333;
-    --light-text: #6c757d;
-    --transition: all 0.3s ease;
+
+/* Accessibility Improvements */
+:focus {
+    outline: 2px solid var(--main-color);
+    outline-offset: 2px;
 }
+
+/* Performance Optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+/* باقي الأنماط تبقى كما هي مع تحسينات للتنظيم */
 
 html {
     scroll-behavior: smooth;
@@ -105,7 +139,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 
 .navbar-toggler {
@@ -203,6 +237,17 @@ section {
     }
 }
 
+/* About me */
+@keyframes floating {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+  }
+  
+  .animated-img {
+    animation: floating 3s ease-in-out infinite;
+  }
+
 /* Achievements */
 .achievements h2 {
     font-size: 1.5rem;
@@ -258,37 +303,87 @@ section {
     }
 }
 
-/* Blog */
-.blog-item {
-    margin-bottom: 2rem;
-}
-
-.blog img {
-    transition: var(--transition);
+/* Blog Scroll Styles */
+.blog-scroll-container {
     width: 100%;
-    height: 250px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .blog-scroll-wrapper {
+    display: inline-flex;
+    gap: 30px;
+    padding: 10px 20px;
+  }
+  
+  .blog-item {
+    flex: 0 0 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-item img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.blog img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.blog h2 {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem;
-    transition: var(--transition);
-}
-
-.blog h2:hover {
-    color: var(--main-color);
-}
-
-.blog p {
-    color: var(--light-text);
-}
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .blog-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hide scrollbar but keep functionality */
+  .blog-scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .blog-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .blog-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+  }
+  
+  .blog-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #055a3a;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-item {
+      flex: 0 0 250px;
+    }
+    
+    .blog-item img {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .blog-scroll-wrapper {
+      gap: 20px;
+    }
+    
+    .blog-item {
+      flex: 0 0 220px;
+    }
+    
+    .blog-item img {
+      height: 150px;
+    }
+  }
 
 /* Testimonials */
 
@@ -332,6 +427,8 @@ section {
 }
 
 /* Fullscreen Image */
+/* Fullscreen Image Animation */
+
 #fullScreenImage {
     display: none;
     position: fixed;
@@ -343,12 +440,24 @@ section {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 #fullScreenImage img {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
+}
+
+#fullScreenImage.show {
+    opacity: 1;
+}
+
+#fullScreenImage.show img {
+    transform: scale(1);
 }
 
 #closeButton {
